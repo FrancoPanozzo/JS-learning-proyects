@@ -1,0 +1,108 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 100vh;
+  background-color: #fbfbfb;
+}
+
+.card {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  width: 75%;
+  height: 75%;
+}
+
+.card button {
+  background-color: #ffaf4f;
+  border: none;
+  border-radius: 25%;
+  outline: none;
+  transition: background-color 0.3s ease;
+  transition: transform 0.025s linear;
+}
+.card button:hover {
+  background-color: #ed733f;
+  cursor: pointer;
+}
+
+.card button:last-of-type:active {
+  transform: rotate(10deg);
+}
+.card button:first-of-type:active {
+  transform: rotate(-10deg);
+}
+
+.card button img {
+  height: 50px;
+  display: block;
+}
+.card button#back img {
+  transform: translateX(-2px);
+}
+.card button#forward img {
+  transform: translateX(2px);
+}
+
+.card .card__review {
+  margin: 0 2rem;
+  padding: 4rem 2rem;
+  background-color: #5f1a79;
+  border-radius: 10px;
+  border-bottom: #ffaf4f solid 3px;
+  border-right: #ffaf4f solid 3px;
+}
+
+.card .card__review h2 {
+  font-family: "Press Start 2P", cursive;
+  font-size: 1.5rem;
+  margin: 1em 0;
+  text-shadow: 3px 3px #201a23;
+  color: #edd83d;
+}
+
+.card .card__review p {
+  font-family: "MuseoModerno", cursive;
+  letter-spacing: 1px;
+  font-size: 1rem;
+  color: #fbfbfb;
+  line-height: 1.6;
+  padding: 0 5em;
+}
+
+.card .card__review img {
+  height: 100px;
+}
+
+#go-back-btn {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+}
+
+#go-back-btn a {
+  padding: 0.5em;
+  background-color: rgb(18, 18, 18);
+  color: #fbfbfb;
+  border-radius: 5px;
+  opacity: 0.7;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  transition: opacity 0.075s ease-in;
+  font-size: 14px;
+}
+
+#go-back-btn a:hover {
+  opacity: 1;
+}

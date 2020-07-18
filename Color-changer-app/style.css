@@ -1,0 +1,74 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  max-width: 100vw;
+  background-color: red;
+}
+
+.container__card {
+  text-align: center;
+  padding: 1rem;
+  border-radius: 2px;
+}
+
+.container__card span {
+  font-size: 1rem;
+  display: block;
+  margin-left: 1rem;
+  margin-top: 1rem;
+  text-align: left;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+button {
+  background-color: rgba(0, 0, 0, 0.65);
+  font-size: 1.5rem;
+  padding: 0.5em 1em;
+  border: 0;
+  border-radius: 2px;
+  cursor: pointer;
+  color: white;
+  transition: background-color 0.2s linear, transform 0.05s ease;
+}
+
+button:hover {
+  background-color: rgba(0, 0, 0, 0.85);
+}
+
+button:active {
+  transform: scale(0.99, 0.99);
+}
+
+button:focus {
+  outline: 0;
+}
+
+#go-back-btn {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+}
+
+#go-back-btn a {
+  padding: 0.5em;
+  background-color: rgb(18, 18, 18);
+  color: #fbfbfb;
+  border-radius: 5px;
+  opacity: 0.7;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  transition: opacity 0.075s ease-in;
+  font-size: 14px;
+}
+
+#go-back-btn a:hover {
+  opacity: 1;
+}
